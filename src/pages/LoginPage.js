@@ -1,8 +1,8 @@
 import HeaderCon from "../containers/HeaderCon";
 
-function MDeletePage() {
+function LoginPage() {
     return (<>
     <HeaderCon />
-    </>);
-}
-export default MDeletePage;
+      </>);
+  }
+  export default LoginPage;

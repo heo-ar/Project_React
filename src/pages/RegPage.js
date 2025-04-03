@@ -1,8 +1,8 @@
 import HeaderCon from "../containers/HeaderCon";
 
-function MDeletePage() {
+function RegPage() {
     return (<>
     <HeaderCon />
-    </>);
-}
-export default MDeletePage;
+      </>);
+  }
+  export default RegPage;

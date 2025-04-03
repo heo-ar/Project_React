@@ -1,8 +1,9 @@
+import IndexPage from './../pages/IndexPage';
+
 function IndexCom() {
-    return (
-     <div>
-        IndexCom
-     </div>
-    );
-  }  
-  export default IndexCom;
+   return (<div>
+      IndexPage
+   </div> );
+
+}
+export default IndexCom;
