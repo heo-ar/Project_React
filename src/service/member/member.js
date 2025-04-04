@@ -17,4 +17,18 @@ const register = (user) => {
     data_set = data_set.concat(user); // 기존 data_set에 새로운 회원 추가 가능
     return 1; // 성공했을 때 1 반환
 }
-export { register , getList }
+
+// 로그인 정보가 맞는지 확인하는 로직
+const loginCheck = (id, pwd) => {
+    const user = data_set.find(user => user.id === id);   // data_set에서 입력한 id가 데이터에 있나 찾기
+    if (user) { // 아이디가 존재하는 경우, (아랫 줄로 내려가 비밀번호가 같은지도 확인)
+        if (user.pwd === pwd) {
+            return user;    // id, pwd 둘 다 동일, 로그인 성공
+        }else{
+            return null;    // pwd 틀림, 로그인 실패
+        }
+    }else{
+        return null;   // id 없음, 로그인 실패
+    }
+}
+export { register, getList, loginCheck }

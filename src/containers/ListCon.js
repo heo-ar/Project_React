@@ -1,6 +1,6 @@
+import ListCom from "../components/ListCom";
 import { reducer, initialState } from "../moduls/member_red";
 import { useEffect, useReducer } from "react";
-import ListCom from "../components/ListCom";
 import { getList } from "../service/member/member"; //더미데이터 부르기
 
 function ListCon() {
@@ -28,7 +28,7 @@ function ListCon() {
 
   return (<>
     <ListCom data = {state.data} loading={state.loading} error={state.error} /> 
-    {/* 데이터를 가져올 때 성공/로딩/에러 상태를 관리 */}
+    {/* 데이터를 가져올 때 성공/로딩/에러 상태를 관리하고 처리 */}
     </>);
 }
 export default ListCon;

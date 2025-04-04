@@ -6,11 +6,9 @@ function ListCom({ data, loading, error }) {
     <div className="list-container">
       <h2>회원 목록</h2>
 
-      {loading ? (
-        <h3 className="loading">Loading . . .</h3>
-      ) : error ? (
-        <h3 className="error">{error}</h3>
-      ) : (
+      {loading ? 
+        <h3 className="loading">Loading . . .</h3> : error ? 
+        <h3 className="error">{error}</h3> : 
         <table className="custom-table">
           <thead>
             <tr>
@@ -29,7 +27,7 @@ function ListCom({ data, loading, error }) {
             ))}
           </tbody>
         </table>
-      )}
+      }
     </div>
   );
 }

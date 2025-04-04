@@ -8,8 +8,16 @@
 /* 네비게이션 링크 스타일 */
 .nav-links {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 20px; /* 링크 간 간격 */
+}
+
+/* 오른쪽 정렬 */
+.auth-section {
+    margin-left: auto; /* 나머지 요소들과 분리하여 오른쪽 정렬 */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 로그인/로그아웃 버튼 간 간격 */
 }
 
 /* 링크 스타일 */
@@ -26,4 +34,24 @@
 .nav-links a:hover {
     background-color: #555;
     border-radius: 5px;
+}
+
+
+.logout {
+    background-color: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.user-login {
+    display: flex;
+    right: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 22px 15px;
 }
