@@ -12,7 +12,7 @@ function HeaderCom() {
         <div className="header-container">
             <nav className="nav-links">
                 <Link to="/">HOME</Link>
-                <Link to="/list">LIST</Link>
+                <Link to="/InquiryList">INQUIRY LIST</Link>
                 <div className="auth-section">
                     {auth.isLoggedIn ? (
                         <>

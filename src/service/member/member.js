@@ -10,7 +10,7 @@ let data_set = [
 ];
 
 // 전체 회원 목록을 갖고 오는 함수, 위의 data_set을 반환해서 등록된 모든 회원 정보를 제공
-const getList = () => data_set;
+const getMList = () => data_set;
 
 // 새로운 회원을 등록하는 함수
 const register = (user) => {
@@ -28,7 +28,7 @@ const loginCheck = (id, pwd) => {
             return null;    // pwd 틀림, 로그인 실패
         }
     }else{
-        return null;   // id 없음, 로그인 실패
+        return -1   // id 없음, 로그인 실패
     }
 }
-export { register, getList, loginCheck }
+export { register, getMList, loginCheck }
